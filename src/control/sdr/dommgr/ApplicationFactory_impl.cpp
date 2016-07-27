@@ -194,7 +194,7 @@ void ApplicationFactory_impl::ValidateSPD(CF::FileManager_ptr fileMgr,
                                           const bool require_prf, 
                                           const bool require_scd) {
   SoftPkg pkg;
-  ValidateSPD(fileMgr, pkg, false, false );
+  ValidateSPD(fileMgr, pkg, sfw_profile, require_prf, require_scd);
 }
 
 void ApplicationFactory_impl::ValidateSPD(CF::FileManager_ptr fileMgr, 

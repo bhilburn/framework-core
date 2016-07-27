@@ -853,7 +853,7 @@ const bool  ComponentInfo::isScaCompliant()
 
 bool ComponentInfo::isAssignedToDevice() const
 {
-    return assignedDevice;
+  return static_cast<bool>(assignedDevice);
 }
 
 bool ComponentInfo::checkStruct(CF::Properties &props)
